@@ -1,0 +1,31 @@
+Fill the VM with snacks
+View the current available snacks
+ask the user to enter the desired snack number
+if the number is not valid:
+	we get back to the previous step
+if the number is valid and available:
+	we view the selected snack with it's attributes(name, number, cost)
+ask the user of the payment method (by coin, by note, by card):
+	if by coin
+		the machine asks the user to insert coins (10c, 20c, 50c, 1$ only)
+		if the amount is valid
+			it adds it to the total balance and shows it to the user and ask again for insertion
+		if the amount is equal or more than the snack cost
+			the VM accepts it and dispense the snack for the user
+		if the there's any change
+			the VM returns it to the user
+	
+	if by note the machine asks the user to insert notes (20$ or 50$ only)
+		if the amount is valid
+			it adds it to the total balance and shows it to the user and ask again for insertion
+		if the amount is equal or more than the snack cost
+			the VM accepts it and dispense the snack for the user
+		if the there's any change
+			the VM returns it to the user
+
+	if by card
+		the machine displays the current balance of the card
+		if the balance is enough for the purchase
+			the machine completes the purchase and takes the cost from the user's balance
+		the machine shows the user his new current balance after purchase and dispense the snack for him
+The machine gets back to the main view (viewing available snacks)
